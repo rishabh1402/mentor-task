@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
+
+footer {
+  width: 91.6%;
+  height: 5px;
+  background-color: rgb(87, 89, 90);
+  opacity: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  Padding: 4rem;
+  position:inherit;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.copyright {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  padding-top: 0.4rem;
+  padding-bottom: 10px;
+}
+
+.social {
+  width: 33px;
+  height: 33px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  position: relative;
+  margin: 5px;
+  z-index: 1;
+  -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.social:hover {
+  background-color: #00c2ff;
+  -webkit-box-shadow: 0px 1px 4px 1px #0038ff, inset 3px 5px 8px -1px #bae1fc;
+  box-shadow: 0px 1px 4px 1px #0038ff, inset 3px 5px 8px -1px #bae1fc;
+}
+
+.SocialGroup {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.icon {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  position: relative;
+  z-index: 2;
+  width: 19px;
+  height: 19px;
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    /* margin: 1rem 0px; */
+    font-size: 16px;
+  }
+  .SocialGroup {
+    /* margin: 3rem 0px; */
+  }
+}

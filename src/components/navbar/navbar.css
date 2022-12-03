@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik Microbe');
+*{
+  padding: 0;
+}
+
+nav{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  z-index:999;
+}
+nav .navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+nav .navbar h2{
+  color: #fff;
+  margin-right: 200px;
+  margin-top: 12px;
+  font-size: 40px;
+  font-family: 'Rubik Microbe';
+}
+nav .navbar h2 a{
+  color: #fff;
+  text-decoration: none;
+}
+nav .navbar li{
+  margin-left: 50px;
+  text-decoration: none;
+  color: rgb(35, 250, 160);
+  list-style: none;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+nav .navbar li a{
+  text-decoration: none;
+  color: rgb(21, 24, 23);
+  font-size: 25px;
+  position: relative;
+  margin-right: 100px;
+}
+nav .navbar li a:hover{
+  color: rgb(0, 255, 247);
+  cursor: pointer;
+}
+nav .navbar li a::after{
+  content: ' ';
+  position:absolute;
+  top: 25px;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background: rgb(0, 255, 247);
+  transition: 0.4s ease-in-out;
+}
+nav .navbar li a:hover::after{
+  left: 0;
+  width: 100%;
+}
+nav .nav_btn{
+  padding: 5px;
+  cursor: pointer;
+  background:transparent;
+  border: none;
+  outline: none;
+  color: azure;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav .nav_bar{
+  margin-top: 3rem;
+}

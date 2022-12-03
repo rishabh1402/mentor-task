@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
+*{
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+
+.amain{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+img{
+    width: 100%;
+}
+.card{
+    padding: 0 16rem;
+}
+.card .blog-post{
+    max-width: 40rem;
+    background-color: white;
+    background-blend-mode:lighten;
+    box-shadow: 0 1.4 rem 8 rem rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 250px;
+    padding: 3rem 10rem;
+    border-radius: .8rem;
+}
+.card .blog-post .blog-img{
+    min-width: 11rem;
+    max-width: 11rem;
+    height: 30 rem;
+    transform: translate(-8rem);
+    position: relative;
+}
+.card .blog-post .blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+
+.card .blog-post .blog-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .blog-post .blog-info .title{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #626668;
+}
+
+.card .blog-post .blog-info .btext{
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    color: #626668;
+    text-align:justify;
+}
